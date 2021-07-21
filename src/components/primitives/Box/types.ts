@@ -1,4 +1,4 @@
-import type { ViewProps } from 'react-native';
+import type { ViewProps, AccessibilityRole, ViewStyle } from 'react-native';
 
 import type {
   BorderProps,
@@ -56,4 +56,6 @@ export interface IBoxProps
   background?: string | ILinearGradientProps;
   bgColor?: string | ILinearGradientProps;
   backgroundColor?: string | ILinearGradientProps;
+  accessibilityRole?: AccessibilityRole;
+  style?: ViewStyle | ViewStyle[] | any;
 }

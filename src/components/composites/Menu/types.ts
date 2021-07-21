@@ -1,6 +1,6 @@
 import type { ITextProps } from '../../primitives/Text';
 import type { IBoxProps } from '../../primitives/Box';
-import type { IPressableProps } from 'src/components/primitives/Pressable';
+import type { IPressableProps } from '../../primitives/Pressable';
 
 export interface IMenuProps extends IBoxProps {
   /**
@@ -122,6 +122,7 @@ export interface IMenuOptionGroupProps extends IMenuGroupProps {
    * Function called when selection changes
    */
   onChange?: (val: any) => void;
+  onPress?: () => void;
 }
 
 export type IMenuOptionContextProps = {
