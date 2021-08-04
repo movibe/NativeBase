@@ -123,8 +123,8 @@ export const Tooltip = ({
 
   const targetRef = React.useRef(null);
 
-  const enterTimeout = React.useRef<number>();
-  const exitTimeout = React.useRef<number>();
+  const enterTimeout: any = React.useRef<number>();
+  const exitTimeout: any = React.useRef<number>();
   const tooltipID = useId();
 
   const openWithDelay = React.useCallback(() => {
